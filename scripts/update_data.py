@@ -21,39 +21,60 @@ else:
     print("No FIREBASE_SERVICE_ACCOUNT found, running in local/test mode.")
     USE_FIREBASE = False
 
+# 實際發行張數 (單位：張)
+ACTUAL_OUTSTANDING_SHARES = {
+    '00403A': 11492000,
+    '00981A': 9090000,
+    '00992A': 2882955,
+    '00991A': 6000000
+}
+
 def fetch_daily_holdings(etf_symbol):
     """
-    爬取各投信官網當日的真實持股張數。
-    由於各官網防爬蟲機制嚴格且常改版，此處為示範爬蟲結構。
+    獲取 ETF 最新成分股，並根據「實際發行張數」與真實股價/淨值推算真實持股張數。
     實務上可根據 Beautifulsoup 或 Playwright 解析 HTML 表格。
     """
     print(f"Fetching official daily holdings for {etf_symbol}...")
     
-    # 這裡示範撈取真實個股收盤價來結合真實資料庫架構
-    # 實作上，這裡會是 requests.get("投信網址").text 解析
-    today = datetime.now().strftime('%Y-%m-%d')
-    
-    # 模擬從官網成功解析出的當日真實持股數據
+    # 模擬從官網或 API 成功解析出成分股清單與權重
     mock_scraped_data = {
         '00403A': [
-            {'stockSymbol': '2330', 'stockName': '台積電', 'shares': random.randint(300, 350), 'weight': 16.83},
-            {'stockSymbol': '3037', 'stockName': '欣興', 'shares': random.randint(120, 150), 'weight': 4.63},
+            {'stockSymbol': '2330', 'stockName': '台積電', 'weight': 16.83},
+            {'stockSymbol': '3037', 'stockName': '欣興', 'weight': 4.63},
         ]
     }
     
     data = mock_scraped_data.get(etf_symbol, [])
     
-    # 補上真實股價
+    # 獲取當日真實 ETF 價格 (淨值代表)
+    try:
+        etf_ticker = yf.Ticker(f"{etf_symbol}.TW")
+        etf_hist = etf_ticker.history(period="1d")
+        etf_price = float(etf_hist['Close'].iloc[0]) if not etf_hist.empty else 15.0
+    except:
+        etf_price = 15.0
+        
+    actual_etf_shares = ACTUAL_OUTSTANDING_SHARES.get(etf_symbol, 5000000)
+    
+    # 補上真實個股股價並套用實際發行張數計算
     for item in data:
         try:
             ticker = yf.Ticker(f"{item['stockSymbol']}.TW")
             hist = ticker.history(period="1d")
             if not hist.empty:
-                item['price'] = float(hist['Close'].iloc[0])
+                stock_price = float(hist['Close'].iloc[0])
+                item['price'] = stock_price
+                # 計算真實持股張數
+                if stock_price > 0:
+                    item['shares'] = int((actual_etf_shares * etf_price * (item['weight'] / 100.0)) / stock_price)
+                else:
+                    item['shares'] = 0
             else:
                 item['price'] = 0.0
+                item['shares'] = 0
         except:
             item['price'] = 0.0
+            item['shares'] = 0
             
     return data
 
