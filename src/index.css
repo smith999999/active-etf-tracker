@@ -1,0 +1,12 @@
+/* Global Resets */
+html, body, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#root {
+  display: block;
+}
