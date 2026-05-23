@@ -136,7 +136,7 @@ const DailyChangeChart: React.FC<DailyChangeChartProps> = ({ selectedStockData, 
                   marginLeft: '4px'
                 }}
               >
-                即時交易價：${livePrice.price.toFixed(1)} ({livePrice.change >= 0 ? '+' : ''}{livePrice.changePercent}%)
+                即時交易價：${livePrice.price.toFixed(1)} ({livePrice.change >= 0 ? '+' : ''}{livePrice.changePercent.toFixed(2)}%)
               </span>
             )}
           </h2>
@@ -151,7 +151,7 @@ const DailyChangeChart: React.FC<DailyChangeChartProps> = ({ selectedStockData, 
             <span className="stat-label">累積變動</span>
             <span className={`stat-value ${isOverallUp ? 'text-up' : 'text-down'}`}>
               {isOverallUp ? <TrendingUp size={16} style={{ display: 'inline', marginRight: '4px' }} /> : <TrendingDown size={16} style={{ display: 'inline', marginRight: '4px' }} />}
-              {isOverallUp ? '+' : ''}{selectedStockData.change.toLocaleString()} 張 ({isOverallUp ? '+' : ''}{selectedStockData.changePercent}%)
+              {isOverallUp ? '+' : ''}{selectedStockData.change.toLocaleString()} 張 ({isOverallUp ? '+' : ''}{selectedStockData.changePercent.toFixed(2)}%)
             </span>
           </div>
         </div>

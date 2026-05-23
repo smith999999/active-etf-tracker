@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      // 允許任何人讀取（公開圖表數據）
+      allow read: if true;
+      // 禁止任何人從前端寫入（寫入將由 GitHub Actions 透過 Admin SDK 執行，不受此規則限制）
+      allow write: if false;
+    }
+  }
+}

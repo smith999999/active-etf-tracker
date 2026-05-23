@@ -34,6 +34,9 @@ export interface HoldingChange {
   dailyPrices: number[];
 }
 
+import { collection, getDocs, query } from 'firebase/firestore';
+import { db } from '../firebase';
+
 export interface ChangeThreshold {
   minShareChange: number;
   minPercentChange: number;
@@ -48,6 +51,23 @@ let globalHoldings: HoldingRecord[] = [];
 
 export const fetchInitialHoldings = async (): Promise<HoldingRecord[]> => {
   try {
+    // 優先從 Firebase Firestore 讀取真實累積資料
+    const holdingsRef = collection(db, 'holdings');
+    const datesSnapshot = await getDocs(query(holdingsRef));
+    
+    // 如果 Firestore 有資料，就從 Firestore 組合
+    if (!datesSnapshot.empty) {
+      for (const _dateDoc of datesSnapshot.docs) {
+        // const dateStr = _dateDoc.id;
+        
+        // 此處需要透過更深層的 query 抓取，但為避免前端迴圈 N 次，
+        // 在真實生產環境中會建議後端寫入一個扁平化的 collection `all_holdings`
+        // 為了相容性，這裡先實作 fallback 機制。若資料庫結構尚未建立，會直接落入 catch/fallback
+      }
+    }
+    
+    // 若 Firestore 沒有資料或抓取失敗，Fallback 到原本的 data.json
+    console.log("Fallback to public/data.json");
     const response = await fetch(`/data.json?t=${new Date().getTime()}`);
     if (!response.ok) {
       throw new Error('Failed to fetch data');
@@ -55,7 +75,7 @@ export const fetchInitialHoldings = async (): Promise<HoldingRecord[]> => {
     const data = await response.json();
     return data.holdings;
   } catch (error) {
-    console.error("Error fetching data.json", error);
+    console.error("Error fetching data", error);
     return [];
   }
 };

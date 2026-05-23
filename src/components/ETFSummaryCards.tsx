@@ -36,7 +36,7 @@ const ETFSummaryCards: React.FC<ETFSummaryCardsProps> = ({ activeETF, onSelectET
                 <span className="etf-card-price">{priceData.price.toFixed(2)}</span>
                 <span className={`etf-card-change ${priceData.change >= 0 ? 'text-up' : 'text-down'}`}>
                   {priceData.change >= 0 ? <TrendingUp size={14} /> : <TrendingDown size={14} />}
-                  {' '}{priceData.change > 0 ? '+' : ''}{priceData.changePercent}%
+                  {' '}{priceData.change > 0 ? '+' : ''}{priceData.changePercent.toFixed(2)}%
                 </span>
               </div>
             ) : (

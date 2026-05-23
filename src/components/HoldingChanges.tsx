@@ -130,7 +130,7 @@ const HoldingChanges: React.FC<HoldingChangesProps> = ({
                             fontWeight: 700 
                           }}
                         >
-                          ${livePrice.price.toFixed(1)} ({livePrice.change >= 0 ? '+' : ''}{livePrice.changePercent}%)
+                          ${livePrice.price.toFixed(1)} ({livePrice.change >= 0 ? '+' : ''}{livePrice.changePercent.toFixed(2)}%)
                         </span>
                       )}
                     </span>
@@ -142,7 +142,7 @@ const HoldingChanges: React.FC<HoldingChangesProps> = ({
                     {isUp ? '+' : ''}{formatShares(item.change)} 張
                   </span>
                   <span className={`change-percent ${isUp ? 'text-up' : 'text-down'}`}>
-                    {isUp ? '+' : ''}{item.changePercent}%
+                    {isUp ? '+' : ''}{item.changePercent.toFixed(2)}%
                   </span>
                   <span className="change-latest">
                     持有 {formatShares(item.latestShares)} 張
