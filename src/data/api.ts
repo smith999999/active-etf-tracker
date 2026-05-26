@@ -51,31 +51,26 @@ let globalHoldings: HoldingRecord[] = [];
 
 export const fetchInitialHoldings = async (): Promise<HoldingRecord[]> => {
   try {
-    // 優先從 Firebase Firestore 讀取真實累積資料
-    const holdingsRef = collection(db, 'holdings');
-    const datesSnapshot = await getDocs(query(holdingsRef));
-    
-    // 如果 Firestore 有資料，就從 Firestore 組合
-    if (!datesSnapshot.empty) {
-      for (const _dateDoc of datesSnapshot.docs) {
-        // const dateStr = _dateDoc.id;
-        
-        // 此處需要透過更深層的 query 抓取，但為避免前端迴圈 N 次，
-        // 在真實生產環境中會建議後端寫入一個扁平化的 collection `all_holdings`
-        // 為了相容性，這裡先實作 fallback 機制。若資料庫結構尚未建立，會直接落入 catch/fallback
-      }
+    // 優先嘗試從 Firebase Firestore 讀取真實累積資料
+    try {
+      const holdingsRef = collection(db, 'holdings');
+      await getDocs(query(holdingsRef));
+      
+      // 假設未來前端需要實作真正的 Firebase 讀取邏輯放在這...
+    } catch (firebaseErr) {
+      console.warn("Firestore fetch failed, falling back to data.json", firebaseErr);
     }
     
-    // 若 Firestore 沒有資料或抓取失敗，Fallback 到原本的 data.json
-    console.log("Fallback to public/data.json");
+    // 若 Firestore 沒有資料或上面發生錯誤，Fallback 到原本的 data.json
+    console.log("Fetching fallback data from /data.json");
     const response = await fetch(`/data.json?t=${new Date().getTime()}`);
     if (!response.ok) {
-      throw new Error('Failed to fetch data');
+      throw new Error('Failed to fetch data.json');
     }
     const data = await response.json();
     return data.holdings;
   } catch (error) {
-    console.error("Error fetching data", error);
+    console.error("Error fetching any data", error);
     return [];
   }
 };
