@@ -81,13 +81,9 @@ export const fetchInitialHoldings = async (): Promise<HoldingRecord[]> => {
 };
 
 export const initializeData = async () => {
-  const cached = localStorage.getItem(STORAGE_KEY);
-  if (cached) {
-    globalHoldings = JSON.parse(cached);
-  } else {
-    globalHoldings = await fetchInitialHoldings();
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(globalHoldings));
-  }
+  // 每次載入都從 data.json 抓取最新資料，不使用 localStorage 快取
+  // 這樣每日更新的資料才會立刻反映在圖表上
+  globalHoldings = await fetchInitialHoldings();
 };
 
 export const clearAndResetDemo = async () => {
