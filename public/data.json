@@ -1,5 +1,4 @@
 {
-  "updatedAt": "2026-05-23T14:00:23.960919",
   "holdings": [
     {
       "date": "2026-04-24",
@@ -4707,6 +4706,546 @@
       "shares": 6811,
       "weight": 3.26,
       "stockPrice": 561.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 7266,
+      "weight": 13.49,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "3037",
+      "stockName": "欣興",
+      "shares": 3842,
+      "weight": 3.41,
+      "stockPrice": 1085.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2303",
+      "stockName": "聯電",
+      "shares": 35511,
+      "weight": 3.79,
+      "stockPrice": 130.5
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "3017",
+      "stockName": "奇鋐",
+      "shares": 1799,
+      "weight": 4.01,
+      "stockPrice": 2725.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2383",
+      "stockName": "台光電",
+      "shares": 949,
+      "weight": 4.11,
+      "stockPrice": 5290.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "3711",
+      "stockName": "日月光投控",
+      "shares": 6523,
+      "weight": 3.26,
+      "stockPrice": 611.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2308",
+      "stockName": "台達電",
+      "shares": 1769,
+      "weight": 3.4,
+      "stockPrice": 2350.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 12521,
+      "weight": 9.93,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2383",
+      "stockName": "台光電",
+      "shares": 4577,
+      "weight": 8.46,
+      "stockPrice": 5290.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2345",
+      "stockName": "智邦",
+      "shares": 6445,
+      "weight": 5.9,
+      "stockPrice": 2620.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2454",
+      "stockName": "聯發科",
+      "shares": 3879,
+      "weight": 5.78,
+      "stockPrice": 4265.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "5347",
+      "stockName": "世界",
+      "shares": 0,
+      "weight": 4.0,
+      "stockPrice": 0.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "3264",
+      "stockName": "欣銓",
+      "shares": 0,
+      "weight": 3.5,
+      "stockPrice": 0.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "3189",
+      "stockName": "景碩",
+      "shares": 12338,
+      "weight": 3.0,
+      "stockPrice": 696.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2481",
+      "stockName": "強茂",
+      "shares": 48680,
+      "weight": 2.5,
+      "stockPrice": 147.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "6187",
+      "stockName": "萬潤",
+      "shares": 0,
+      "weight": 2.0,
+      "stockPrice": 0.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "3443",
+      "stockName": "創意",
+      "shares": 812,
+      "weight": 1.5,
+      "stockPrice": 5285.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 3604,
+      "weight": 15.0,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3105",
+      "stockName": "穩懋",
+      "shares": 0,
+      "weight": 8.0,
+      "stockPrice": 0.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3036",
+      "stockName": "文曄",
+      "shares": 13938,
+      "weight": 7.5,
+      "stockPrice": 293.5
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "2337",
+      "stockName": "旺宏",
+      "shares": 20390,
+      "weight": 6.0,
+      "stockPrice": 160.5
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3711",
+      "stockName": "日月光投控",
+      "shares": 4909,
+      "weight": 5.5,
+      "stockPrice": 611.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3260",
+      "stockName": "威剛",
+      "shares": 0,
+      "weight": 5.0,
+      "stockPrice": 0.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 8787,
+      "weight": 17.2,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "2327",
+      "stockName": "國巨",
+      "shares": 14036,
+      "weight": 8.0,
+      "stockPrice": 661.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "2454",
+      "stockName": "聯發科",
+      "shares": 2036,
+      "weight": 7.49,
+      "stockPrice": 4265.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "8299",
+      "stockName": "群聯",
+      "shares": 0,
+      "weight": 6.0,
+      "stockPrice": 0.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "3037",
+      "stockName": "欣興",
+      "shares": 5879,
+      "weight": 5.5,
+      "stockPrice": 1085.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "8046",
+      "stockName": "南電",
+      "shares": 6289,
+      "weight": 5.0,
+      "stockPrice": 922.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "3189",
+      "stockName": "景碩",
+      "shares": 7498,
+      "weight": 4.5,
+      "stockPrice": 696.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 7266,
+      "weight": 13.49,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "3037",
+      "stockName": "欣興",
+      "shares": 3842,
+      "weight": 3.41,
+      "stockPrice": 1085.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2303",
+      "stockName": "聯電",
+      "shares": 35511,
+      "weight": 3.79,
+      "stockPrice": 130.5
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "3017",
+      "stockName": "奇鋐",
+      "shares": 1799,
+      "weight": 4.01,
+      "stockPrice": 2725.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2383",
+      "stockName": "台光電",
+      "shares": 949,
+      "weight": 4.11,
+      "stockPrice": 5290.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "3711",
+      "stockName": "日月光投控",
+      "shares": 6523,
+      "weight": 3.26,
+      "stockPrice": 611.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00403A",
+      "stockSymbol": "2308",
+      "stockName": "台達電",
+      "shares": 1769,
+      "weight": 3.4,
+      "stockPrice": 2350.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 12521,
+      "weight": 9.93,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2383",
+      "stockName": "台光電",
+      "shares": 4577,
+      "weight": 8.46,
+      "stockPrice": 5290.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2345",
+      "stockName": "智邦",
+      "shares": 6445,
+      "weight": 5.9,
+      "stockPrice": 2620.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2454",
+      "stockName": "聯發科",
+      "shares": 3879,
+      "weight": 5.78,
+      "stockPrice": 4265.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "5347",
+      "stockName": "世界",
+      "shares": 69392,
+      "weight": 4.0,
+      "stockPrice": 165.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "3264",
+      "stockName": "欣銓",
+      "shares": 43370,
+      "weight": 3.5,
+      "stockPrice": 231.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "3189",
+      "stockName": "景碩",
+      "shares": 12338,
+      "weight": 3.0,
+      "stockPrice": 696.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "2481",
+      "stockName": "強茂",
+      "shares": 48680,
+      "weight": 2.5,
+      "stockPrice": 147.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "6187",
+      "stockName": "萬潤",
+      "shares": 4956,
+      "weight": 2.0,
+      "stockPrice": 1155.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00981A",
+      "stockSymbol": "3443",
+      "stockName": "創意",
+      "shares": 812,
+      "weight": 1.5,
+      "stockPrice": 5285.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 3604,
+      "weight": 15.0,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3105",
+      "stockName": "穩懋",
+      "shares": 7764,
+      "weight": 8.0,
+      "stockPrice": 562.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3036",
+      "stockName": "文曄",
+      "shares": 13938,
+      "weight": 7.5,
+      "stockPrice": 293.5
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "2337",
+      "stockName": "旺宏",
+      "shares": 20390,
+      "weight": 6.0,
+      "stockPrice": 160.5
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3711",
+      "stockName": "日月光投控",
+      "shares": 4909,
+      "weight": 5.5,
+      "stockPrice": 611.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00992A",
+      "stockSymbol": "3260",
+      "stockName": "威剛",
+      "shares": 6651,
+      "weight": 5.0,
+      "stockPrice": 410.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "2330",
+      "stockName": "台積電",
+      "shares": 8787,
+      "weight": 17.2,
+      "stockPrice": 2270.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "2327",
+      "stockName": "國巨",
+      "shares": 14036,
+      "weight": 8.0,
+      "stockPrice": 661.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "2454",
+      "stockName": "聯發科",
+      "shares": 2036,
+      "weight": 7.49,
+      "stockPrice": 4265.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "8299",
+      "stockName": "群聯",
+      "shares": 2777,
+      "weight": 6.0,
+      "stockPrice": 2505.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "3037",
+      "stockName": "欣興",
+      "shares": 5879,
+      "weight": 5.5,
+      "stockPrice": 1085.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "8046",
+      "stockName": "南電",
+      "shares": 6289,
+      "weight": 5.0,
+      "stockPrice": 922.0
+    },
+    {
+      "date": "2026-05-26",
+      "etfSymbol": "00991A",
+      "stockSymbol": "3189",
+      "stockName": "景碩",
+      "shares": 7498,
+      "weight": 4.5,
+      "stockPrice": 696.0
     }
   ]
 }
